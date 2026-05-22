@@ -1,0 +1,17 @@
+﻿COD_MethodID,COD Method,Method_Icon
+1,Alive,COD_alive_method.png
+2,arrow,COD_arrow.png
+3,beheading,COD_beheading.png
+4,bludgeoning,COD_bludgeon.png
+5,burning,COD_burning.png
+6,drowning,COD_drowning.png
+7,fall,COD_falling.png
+8,ghost/curse,COD_ghost_curse.png
+9,hanging,COD_hanging.png
+10,illness,COD_sickness.png
+11,old age,COD_oldage.png
+12,poisoning,COD_poison.png
+13,unknown means,COD_unknown.png
+14,stabbing,COD_stabbing.png
+15,starvation,COD_starvation.png
+16,strangulation,COD_strangulation.png

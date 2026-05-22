@@ -1,0 +1,9 @@
+﻿COD_ActionID,Action,Action_Icon
+1,Alive,COD_alive.png
+2,Accident,COD_accident.png
+3,Death in battle,COD_battle.png
+4,Execution,COD_execution.png
+5,Murder,COD_murder.png
+6,Natural causes,COD_natural_causes.png
+7,Suicide,COD_suicide.png
+8,Supernatural death,COD_supernatural.png
