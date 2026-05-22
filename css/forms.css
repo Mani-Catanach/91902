@@ -1,0 +1,104 @@
+
+
+.search {
+    background:#ffffff;
+    width: 200px;
+}
+
+input, textarea, select {
+font-family: "Libre Baskerville", serif;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 10px;    /* adds gap underneath widget */
+    display: inline-block;
+    border: 1px solid #000;
+    box-sizing: border-box; 
+    width: 100%;
+}
+
+
+.quicksearch {
+    border-radius: 5px 0 0 5px; 
+    display: inline-block;
+    padding: 10px;
+    font-size: 150%;;
+}
+
+
+.submit::-moz-focus-inner { 
+    border: 0;
+}
+
+
+.submit {
+    position:relative;
+    width: 45px;
+    font-size: 150%;
+    
+    left:-5px;
+    background-color: #cba7cf; 
+    color:#000000;
+    border: 1px solid #000;
+    border-radius: 0 5px 5px 0;   
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 13px;
+}
+
+.submit:hover {
+    background-color: #000;
+    color: #cba7cf;
+}
+
+.advanced {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    width: 275px;
+}
+
+.advanced-button {
+    font-family: "Libre Baskerville", serif;
+    font-size: 150%;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-evenly;
+}
+
+.advanced-search {
+    background-color: #333;
+    color: #fff;
+}
+
+.advanced-search:hover{
+    color: #fcd495;
+}
+
+/* Admin Form styling... */
+.admin-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Add & Edit form styling */
+
+.big-form {
+    max-width: 1000px;
+margin: auto;}
+
+.large-submit{
+    font-size: 150%;
+    
+    left:-5px;
+    background-color: #cba7cf; 
+    color:#000000;
+    border: 1px solid #000;
+    border-radius: 5px;   
+
+}
+
+.large-submit:hover {
+    background-color:#fcd495;
+}

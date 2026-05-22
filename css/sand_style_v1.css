@@ -1,0 +1,189 @@
+/* html, body styling ensures page fills viewport */
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+html, body{
+/* margin: auto; */
+padding: 0;
+height: 100%;   /* makes footer stick to bottom */
+margin: 0;
+
+background-color: #5e3163;  /* deep purple */
+color: #ffffff;
+
+font-family: "Libre Baskerville", serif;
+
+}
+
+
+a {
+  color: #fff;
+}
+
+/* header */
+
+.header {
+  /* background-color: #fff; */
+  /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
+  position: relative;
+  /* width: 100%; */
+  z-index: 3;
+  padding: 10px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  display:inline-block;
+  width: auto;   /* adjust to desired width */
+}
+
+.header li {
+  display: block;
+  padding: 20px;
+  /* border-right: 1px solid #f4f4f4; */
+  text-decoration: none;
+}
+
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  display: inline-block; 
+
+  /* Change padding to change placement of hamburger */
+  padding: 28px 20px;
+
+  /* Position 'x' for menu */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+/* Controls icon display & animation */
+.header .menu-icon .navicon {
+  background: #ffffff;  /* hamburger color */
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #ffffff;  /* hamburger color */
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+/* Navigation Button styling (ie: random button) */
+a.nav-button{
+    border-radius: 5px;
+    /* font-size: 150%; */
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px;
+
+    /* Make buttons resize to width of content */
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+a.nav-button:link, a.nav-button:visited {
+    color: #000;
+    background-color: #cba7cf;
+}
+
+a.nav-button:hover {
+     background-color: #FCD495;
+   
+}
+
+
+
+
+@media (min-width: 48em) {
+
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+  .header .menu {
+    background-color: #7b4b80;  /* new dropdown colour */
+    position: absolute;
+    top: 60px;   /* push below the header area */
+    right: 10px; /* shift right slightly */
+    left: 70px;  /* creates space so items don’t sit under the icon */
+    border-radius: 8px;
+    padding: 10px 0;
+  }
+
+  .header .menu li {
+    padding: 15px 20px;
+    text-align: left;
+  }
+
+}
